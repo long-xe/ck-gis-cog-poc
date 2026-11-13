@@ -4,6 +4,8 @@ PoC thuần frontend. Raster đầu ra của ETL (Cloud Optimized GeoTIFF, hệ 
 
 > **Dữ liệu giả lập.** Bảng lớp hiện trạng, sinh khối, tỷ lệ biến động… chỉ để có raster trông hợp lý. Đây không phải số liệu thật. Ranh giới tỉnh lấy từ OpenStreetMap (ODbL).
 
+Tech stack, sơ đồ kiến trúc và các luồng xử lý (ETL, khởi tạo, vẽ lớp, click, metadata, swipe, self-test): xem [docs/tech-stack.md](docs/tech-stack.md).
+
 ## PoC chứng minh điều gì
 
 | Mục tiêu | Cách kiểm chứng |
