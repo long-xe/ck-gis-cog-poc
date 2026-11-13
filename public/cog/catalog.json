@@ -1,0 +1,744 @@
+{
+ "version": 1,
+ "generatedAt": "2026-11-13T10:07:21+00:00",
+ "note": "Dữ liệu GIẢ LẬP cho PoC, không phải số liệu thật.",
+ "crs": {
+  "code": "EPSG:9209",
+  "name": "VN-2000 / TM-3 105-30",
+  "proj4": "+proj=tmerc +lat_0=0 +lon_0=105.5 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs",
+  "extent": [
+   113759,
+   884676,
+   996344,
+   2662459
+  ],
+  "worldExtent": [
+   102.0,
+   8.0,
+   110.0,
+   24.0
+  ]
+ },
+ "extent": [
+  539250.0,
+  2319690.0,
+  658920.0,
+  2392440.0
+ ],
+ "boundary": {
+  "url": "data/boundary_9209.geojson",
+  "attribution": "Ranh giới: © OpenStreetMap contributors (ODbL)"
+ },
+ "swipe": {
+  "left": "hien_trang_2021",
+  "right": "hien_trang_2025"
+ },
+ "layers": [
+  {
+   "id": "hien_trang_2021",
+   "name": "Hiện trạng rừng 2021",
+   "group": "Hiện trạng rừng",
+   "year": 2021,
+   "kind": "categorical",
+   "url": "cog/hien_trang_2021.tif",
+   "dtype": "uint8",
+   "nodata": 0,
+   "resolution": 10.0,
+   "width": 11967,
+   "height": 7275,
+   "unit": "",
+   "classes": [
+    {
+     "value": 1,
+     "label": "Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#1b6b34",
+     "forest": true,
+     "area_ha": 55735.14
+    },
+    {
+     "value": 2,
+     "label": "Rừng hỗn giao gỗ – tre nứa",
+     "color": "#5a9b3d",
+     "forest": true,
+     "area_ha": 31802.5
+    },
+    {
+     "value": 3,
+     "label": "Rừng trồng",
+     "color": "#a9d46f",
+     "forest": true,
+     "area_ha": 71098.81
+    },
+    {
+     "value": 4,
+     "label": "Đất có cây gỗ tái sinh",
+     "color": "#e3d26f",
+     "forest": false,
+     "area_ha": 38391.4
+    },
+    {
+     "value": 5,
+     "label": "Đất trống, trảng cỏ cây bụi",
+     "color": "#f0a15a",
+     "forest": false,
+     "area_ha": 26494.07
+    },
+    {
+     "value": 6,
+     "label": "Đất nông nghiệp, dân cư và khác",
+     "color": "#d8cfc2",
+     "forest": false,
+     "area_ha": 240673.1
+    },
+    {
+     "value": 7,
+     "label": "Mặt nước",
+     "color": "#4f8fd6",
+     "forest": false,
+     "area_ha": 7047.12
+    }
+   ],
+   "bytes": 1495474,
+   "sha256": "7c110b0afeac6076a8e0fefc1744d3c55cc9618dc24c74bd79e09612c1f291be"
+  },
+  {
+   "id": "hien_trang_2025",
+   "name": "Hiện trạng rừng 2025",
+   "group": "Hiện trạng rừng",
+   "year": 2025,
+   "kind": "categorical",
+   "url": "cog/hien_trang_2025.tif",
+   "dtype": "uint8",
+   "nodata": 0,
+   "resolution": 10.0,
+   "width": 11967,
+   "height": 7275,
+   "unit": "",
+   "classes": [
+    {
+     "value": 1,
+     "label": "Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#1b6b34",
+     "forest": true,
+     "area_ha": 53920.14
+    },
+    {
+     "value": 2,
+     "label": "Rừng hỗn giao gỗ – tre nứa",
+     "color": "#5a9b3d",
+     "forest": true,
+     "area_ha": 34613.47
+    },
+    {
+     "value": 3,
+     "label": "Rừng trồng",
+     "color": "#a9d46f",
+     "forest": true,
+     "area_ha": 77932.32
+    },
+    {
+     "value": 4,
+     "label": "Đất có cây gỗ tái sinh",
+     "color": "#e3d26f",
+     "forest": false,
+     "area_ha": 28948.66
+    },
+    {
+     "value": 5,
+     "label": "Đất trống, trảng cỏ cây bụi",
+     "color": "#f0a15a",
+     "forest": false,
+     "area_ha": 26685.39
+    },
+    {
+     "value": 6,
+     "label": "Đất nông nghiệp, dân cư và khác",
+     "color": "#d8cfc2",
+     "forest": false,
+     "area_ha": 242095.04
+    },
+    {
+     "value": 7,
+     "label": "Mặt nước",
+     "color": "#4f8fd6",
+     "forest": false,
+     "area_ha": 7047.12
+    }
+   ],
+   "bytes": 1548347,
+   "sha256": "01ad55a236b0e210bf685dd30b295562e62685cf5b28f9577169521db4e9c6f1"
+  },
+  {
+   "id": "bien_dong_2021_2025",
+   "name": "Biến động hiện trạng 2021 → 2025",
+   "group": "Biến động",
+   "year": 2025,
+   "kind": "categorical",
+   "url": "cog/bien_dong_2021_2025.tif",
+   "dtype": "uint8",
+   "nodata": 0,
+   "resolution": 10.0,
+   "width": 11967,
+   "height": 7275,
+   "unit": "",
+   "classes": [
+    {
+     "value": 11,
+     "label": "Không đổi – Rừng tự nhiên gỗ (thường xanh)",
+     "color": null,
+     "group": null,
+     "area_ha": 53920.14
+    },
+    {
+     "value": 12,
+     "label": "Rừng tự nhiên gỗ (thường xanh) → Rừng hỗn giao gỗ – tre nứa",
+     "color": "#8e44ad",
+     "group": "within",
+     "area_ha": 0.0
+    },
+    {
+     "value": 13,
+     "label": "Rừng tự nhiên gỗ (thường xanh) → Rừng trồng",
+     "color": "#8e44ad",
+     "group": "within",
+     "area_ha": 213.8
+    },
+    {
+     "value": 14,
+     "label": "Rừng tự nhiên gỗ (thường xanh) → Đất có cây gỗ tái sinh",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 15,
+     "label": "Rừng tự nhiên gỗ (thường xanh) → Đất trống, trảng cỏ cây bụi",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 1601.2
+    },
+    {
+     "value": 16,
+     "label": "Rừng tự nhiên gỗ (thường xanh) → Đất nông nghiệp, dân cư và khác",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 17,
+     "label": "Rừng tự nhiên gỗ (thường xanh) → Mặt nước",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 21,
+     "label": "Rừng hỗn giao gỗ – tre nứa → Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#8e44ad",
+     "group": "within",
+     "area_ha": 0.0
+    },
+    {
+     "value": 22,
+     "label": "Không đổi – Rừng hỗn giao gỗ – tre nứa",
+     "color": null,
+     "group": null,
+     "area_ha": 30211.47
+    },
+    {
+     "value": 23,
+     "label": "Rừng hỗn giao gỗ – tre nứa → Rừng trồng",
+     "color": "#8e44ad",
+     "group": "within",
+     "area_ha": 557.34
+    },
+    {
+     "value": 24,
+     "label": "Rừng hỗn giao gỗ – tre nứa → Đất có cây gỗ tái sinh",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 25,
+     "label": "Rừng hỗn giao gỗ – tre nứa → Đất trống, trảng cỏ cây bụi",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 1033.69
+    },
+    {
+     "value": 26,
+     "label": "Rừng hỗn giao gỗ – tre nứa → Đất nông nghiệp, dân cư và khác",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 27,
+     "label": "Rừng hỗn giao gỗ – tre nứa → Mặt nước",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 31,
+     "label": "Rừng trồng → Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#8e44ad",
+     "group": "within",
+     "area_ha": 0.0
+    },
+    {
+     "value": 32,
+     "label": "Rừng trồng → Rừng hỗn giao gỗ – tre nứa",
+     "color": "#8e44ad",
+     "group": "within",
+     "area_ha": 0.0
+    },
+    {
+     "value": 33,
+     "label": "Không đổi – Rừng trồng",
+     "color": null,
+     "group": null,
+     "area_ha": 67761.43
+    },
+    {
+     "value": 34,
+     "label": "Rừng trồng → Đất có cây gỗ tái sinh",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 35,
+     "label": "Rừng trồng → Đất trống, trảng cỏ cây bụi",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 3337.38
+    },
+    {
+     "value": 36,
+     "label": "Rừng trồng → Đất nông nghiệp, dân cư và khác",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 37,
+     "label": "Rừng trồng → Mặt nước",
+     "color": "#d7301f",
+     "group": "loss",
+     "area_ha": 0.0
+    },
+    {
+     "value": 41,
+     "label": "Đất có cây gỗ tái sinh → Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 42,
+     "label": "Đất có cây gỗ tái sinh → Rừng hỗn giao gỗ – tre nứa",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 4402.0
+    },
+    {
+     "value": 43,
+     "label": "Đất có cây gỗ tái sinh → Rừng trồng",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 5040.74
+    },
+    {
+     "value": 44,
+     "label": "Không đổi – Đất có cây gỗ tái sinh",
+     "color": null,
+     "group": null,
+     "area_ha": 28948.66
+    },
+    {
+     "value": 45,
+     "label": "Đất có cây gỗ tái sinh → Đất trống, trảng cỏ cây bụi",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 46,
+     "label": "Đất có cây gỗ tái sinh → Đất nông nghiệp, dân cư và khác",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 47,
+     "label": "Đất có cây gỗ tái sinh → Mặt nước",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 51,
+     "label": "Đất trống, trảng cỏ cây bụi → Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 52,
+     "label": "Đất trống, trảng cỏ cây bụi → Rừng hỗn giao gỗ – tre nứa",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 53,
+     "label": "Đất trống, trảng cỏ cây bụi → Rừng trồng",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 4359.01
+    },
+    {
+     "value": 54,
+     "label": "Đất trống, trảng cỏ cây bụi → Đất có cây gỗ tái sinh",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 55,
+     "label": "Không đổi – Đất trống, trảng cỏ cây bụi",
+     "color": null,
+     "group": null,
+     "area_ha": 20713.12
+    },
+    {
+     "value": 56,
+     "label": "Đất trống, trảng cỏ cây bụi → Đất nông nghiệp, dân cư và khác",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 1421.94
+    },
+    {
+     "value": 57,
+     "label": "Đất trống, trảng cỏ cây bụi → Mặt nước",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 61,
+     "label": "Đất nông nghiệp, dân cư và khác → Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 62,
+     "label": "Đất nông nghiệp, dân cư và khác → Rừng hỗn giao gỗ – tre nứa",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 63,
+     "label": "Đất nông nghiệp, dân cư và khác → Rừng trồng",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 64,
+     "label": "Đất nông nghiệp, dân cư và khác → Đất có cây gỗ tái sinh",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 65,
+     "label": "Đất nông nghiệp, dân cư và khác → Đất trống, trảng cỏ cây bụi",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 66,
+     "label": "Không đổi – Đất nông nghiệp, dân cư và khác",
+     "color": null,
+     "group": null,
+     "area_ha": 240673.1
+    },
+    {
+     "value": 67,
+     "label": "Đất nông nghiệp, dân cư và khác → Mặt nước",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 71,
+     "label": "Mặt nước → Rừng tự nhiên gỗ (thường xanh)",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 72,
+     "label": "Mặt nước → Rừng hỗn giao gỗ – tre nứa",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 73,
+     "label": "Mặt nước → Rừng trồng",
+     "color": "#2b83ba",
+     "group": "gain",
+     "area_ha": 0.0
+    },
+    {
+     "value": 74,
+     "label": "Mặt nước → Đất có cây gỗ tái sinh",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 75,
+     "label": "Mặt nước → Đất trống, trảng cỏ cây bụi",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 76,
+     "label": "Mặt nước → Đất nông nghiệp, dân cư và khác",
+     "color": "#9e9e9e",
+     "group": "other",
+     "area_ha": 0.0
+    },
+    {
+     "value": 77,
+     "label": "Không đổi – Mặt nước",
+     "color": null,
+     "group": null,
+     "area_ha": 7047.12
+    }
+   ],
+   "legend": [
+    {
+     "label": "Mất rừng",
+     "color": "#d7301f",
+     "area_ha": 5972.27
+    },
+    {
+     "label": "Tăng rừng",
+     "color": "#2b83ba",
+     "area_ha": 13801.75
+    },
+    {
+     "label": "Thay đổi loại rừng",
+     "color": "#8e44ad",
+     "area_ha": 771.14
+    },
+    {
+     "label": "Thay đổi ngoài đất rừng",
+     "color": "#9e9e9e",
+     "area_ha": 1421.94
+    }
+   ],
+   "bytes": 1676997,
+   "sha256": "e353eabc7f882cd28e479802d9aa2c70fbfe1855a100d9bfc544c4ab268cc8e1"
+  },
+  {
+   "id": "sinh_khoi_2025",
+   "name": "Sinh khối 2025",
+   "group": "Sinh khối & carbon",
+   "year": 2025,
+   "kind": "continuous",
+   "url": "cog/sinh_khoi_2025.tif",
+   "dtype": "float32",
+   "nodata": -9999,
+   "resolution": 30.0,
+   "width": 3989,
+   "height": 2425,
+   "unit": "t/ha",
+   "decimals": 1,
+   "legendTitle": "Sinh khối trên mặt đất (t/ha)",
+   "ramp": [
+    {
+     "value": 0.0,
+     "color": "#fbf8d0"
+    },
+    {
+     "value": 25.0,
+     "color": "#d9ef8b"
+    },
+    {
+     "value": 60.0,
+     "color": "#a6d96a"
+    },
+    {
+     "value": 100.0,
+     "color": "#66bd63"
+    },
+    {
+     "value": 150.0,
+     "color": "#1a9850"
+    },
+    {
+     "value": 220.0,
+     "color": "#006837"
+    },
+    {
+     "value": 300.0,
+     "color": "#00341b"
+    }
+   ],
+   "stats": {
+    "min": 0.0,
+    "max": 350.0,
+    "mean": 46.515,
+    "total": 21919734.5,
+    "totalUnit": "t"
+   },
+   "bytes": 12623229,
+   "sha256": "47ce4032cd7f4fef5a569e2735104a18164ec46642362a30b29dbdbd6163a233"
+  },
+  {
+   "id": "carbon_2025",
+   "name": "Trữ lượng carbon 2025",
+   "group": "Sinh khối & carbon",
+   "year": 2025,
+   "kind": "continuous",
+   "url": "cog/carbon_2025.tif",
+   "dtype": "float32",
+   "nodata": -9999,
+   "resolution": 30.0,
+   "width": 3989,
+   "height": 2425,
+   "unit": "tC/ha",
+   "decimals": 2,
+   "legendTitle": "Trữ lượng carbon (tC/ha)",
+   "ramp": [
+    {
+     "value": 0.0,
+     "color": "#fbf8d0"
+    },
+    {
+     "value": 11.75,
+     "color": "#d9ef8b"
+    },
+    {
+     "value": 28.2,
+     "color": "#a6d96a"
+    },
+    {
+     "value": 47.0,
+     "color": "#66bd63"
+    },
+    {
+     "value": 70.5,
+     "color": "#1a9850"
+    },
+    {
+     "value": 103.4,
+     "color": "#006837"
+    },
+    {
+     "value": 141.0,
+     "color": "#00341b"
+    }
+   ],
+   "stats": {
+    "min": 0.0,
+    "max": 164.5,
+    "mean": 21.862,
+    "total": 10302275.2,
+    "totalUnit": "tC"
+   },
+   "bytes": 15485237,
+   "sha256": "e352e5e2ffebf78dc6e0ed1bec0a32342e76ca0c1c3456bfc5d05501ec526dce"
+  }
+ ],
+ "transitionMatrix": {
+  "unit": "ha",
+  "from": 2021,
+  "to": 2025,
+  "classes": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rows": [
+   [
+    53920.14,
+    0.0,
+    213.8,
+    0.0,
+    1601.2,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    30211.47,
+    557.34,
+    0.0,
+    1033.69,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    67761.43,
+    0.0,
+    3337.38,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    4402.0,
+    5040.74,
+    28948.66,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    4359.01,
+    0.0,
+    20713.12,
+    1421.94,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    240673.1,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    7047.12
+   ]
+  ]
+ }
+}

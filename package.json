@@ -1,0 +1,25 @@
+{
+  "name": "ck-gis-cog-poc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "PoC: hiển thị raster COG (VN-2000) bằng OpenLayers, thuần frontend",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "geotiff": "3.1.0-beta.0",
+    "ol": "10.11.0",
+    "proj4": "2.23.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vite": "^8.3.7"
+  }
+}

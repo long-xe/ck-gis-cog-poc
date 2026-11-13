@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+# Dữ liệu trung gian (raster thô, ranh giới OSM gốc) – sinh lại bằng scripts/.
+# COG trong public/cog/ ĐƯỢC commit để clone về là chạy demo ngay.
+data/
+.DS_Store

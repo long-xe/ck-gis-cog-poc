@@ -1,0 +1,5 @@
+# Sinh và kiểm tra COG giả lập. rasterio có sẵn GDAL (kèm driver COG) trong wheel.
+rasterio==1.5.2
+numpy==2.5.4
+pyproj==3.8.0
+shapely==2.2.0

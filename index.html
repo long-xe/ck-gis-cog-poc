@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CK-GIS · PoC COG VN-2000</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5135'/%3E%3Cpath d='M16 5l8 12h-5l5 8H8l5-8H8z' fill='%23a9d46f'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" aria-label="Điều khiển">
+        <header class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <h1>CK-GIS · PoC hiển thị COG</h1>
+            <p id="crs-label">Đang tải…</p>
+          </div>
+        </header>
+        <p class="mock-banner">Dữ liệu giả lập để thử kỹ thuật, không phải số liệu thật.</p>
+        <section id="layer-panel" class="panel"></section>
+        <section id="compare-panel" class="panel"></section>
+        <section id="selftest-panel" class="panel"></section>
+        <footer class="sidebar-foot">
+          Raster đọc trực tiếp từ tệp COG qua HTTP Range bằng OpenLayers + geotiff.js, không qua máy chủ bản đồ.
+        </footer>
+      </aside>
+
+      <main class="map-area">
+        <div id="map" class="map" tabindex="0" aria-label="Bản đồ"></div>
+        <div id="swipe-ui" class="swipe-ui" hidden></div>
+        <div id="info-panel" class="info-panel" role="dialog" aria-label="Thông tin điểm" hidden></div>
+        <aside id="metadata-panel" class="metadata-panel" aria-label="Metadata COG" hidden></aside>
+        <div class="statusbar">
+          <div id="mouse-position" class="mouse-position-host"></div>
+          <div class="status-right">
+            <span id="network-stats"></span>
+            <span id="load-status">Đang đọc header COG…</span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
