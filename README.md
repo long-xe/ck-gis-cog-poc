@@ -22,7 +22,7 @@ npm run dev            # http://localhost:5173  (thêm ?selftest để tự ch�
 npm run build && npm run preview   # bản build, http://localhost:4173
 ```
 
-Các tệp `public/cog/*.tif` không đưa vào git. Nếu chưa có, sinh lại như sau (seed cố định, mất khoảng 2 phút, RAM đỉnh khoảng 2,4 GB):
+Các tệp COG đã có sẵn trong `public/cog/`, nên clone về là chạy demo được ngay. Muốn sinh lại dữ liệu (seed cố định, mất khoảng 2 phút, RAM đỉnh khoảng 2,4 GB) thì chạy:
 
 ```bash
 python3.13 -m venv .venv
